@@ -1,1 +1,28 @@
 
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Beverage_Labels
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            string product = Console.ReadLine();
+            int volume = int.Parse(Console.ReadLine());
+            int energy = int.Parse(Console.ReadLine());
+            int g = int.Parse(Console.ReadLine());
+            double kcal = volume * energy / 100.0 ;
+            double sugars = volume * g / 100.0 ;
+
+            Console.WriteLine($"{volume}ml {product}:");
+            Console.WriteLine($"{kcal}kcal, {sugars}g sugars");
+
+
+        }
+    }
+}
